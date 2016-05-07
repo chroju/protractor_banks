@@ -1,0 +1,23 @@
+{
+  "name": "selenium_scraping_banks",
+  "version": "1.0.0",
+  "description": "npmによる銀行サイトのスクレイピング",
+  "main": "index.js",
+  "scripts": {
+    "webdriver-update": "$(npm bin)/webdriver-manager update",
+    "scraping-jpbank": "$(npm bin)/protractor conf.js --specs jpbank.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chroju/selenium_scraping_banks.git"
+  },
+  "author": "chroju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chroju/selenium_scraping_banks/issues"
+  },
+  "homepage": "https://github.com/chroju/selenium_scraping_banks#readme",
+  "dependencies": {
+    "protractor": "^3.3.0"
+  }
+}
