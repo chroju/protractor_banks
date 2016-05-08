@@ -13,6 +13,10 @@ exports.config = {
       aikotoba_anime: process.env.JPBANK_ANIME,
       pass: process.env.JPBANK_PASS
     },
+    tokyu: {
+      id: process.env.TOKYU_ID,
+      pass: process.env.TOKYU_PASS
+    },
     sbisec: {
       id: process.env.SBIS_ID,
       pass: process.env.SBIS_PASS
