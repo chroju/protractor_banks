@@ -20,6 +20,10 @@ exports.config = {
     sbisec: {
       id: process.env.SBIS_ID,
       pass: process.env.SBIS_PASS
+    },
+    jaccs: {
+      id: process.env.JACCS_ID,
+      pass: process.env.JACCS_PASS
     }
   }
 }

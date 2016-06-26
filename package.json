@@ -6,7 +6,8 @@
   "scripts": {
     "webdriver-update": "$(npm bin)/webdriver-manager update",
     "scraping-jpbank": "$(npm bin)/protractor conf.js --specs jpbank.js",
-    "scraping-tokyu": "$(npm bin)/protractor conf.js --specs tokyu.js"
+    "scraping-tokyu": "$(npm bin)/protractor conf.js --specs tokyu.js",
+    "scraping-jaccs": "$(npm bin)/protractor conf.js --specs jaccs.js"
   },
   "repository": {
     "type": "git",
