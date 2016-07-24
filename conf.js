@@ -16,6 +16,10 @@ exports.config = {
     sbisec: {
       id: process.env.SBIS_ID,
       pass: process.env.SBIS_PASS
+    },
+    tokyu: {
+      id: process.env.TOKYU_ID,
+      pass: process.env.TOKYU_PASS
     }
   }
 }

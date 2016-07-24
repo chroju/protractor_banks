@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "webdriver-update": "$(npm bin)/webdriver-manager update",
-    "scraping-jpbank": "$(npm bin)/protractor conf.js --specs jpbank.js"
+    "scraping-jpbank": "$(npm bin)/protractor conf.js --specs jpbank.js",
+    "scraping-sbis": "$(npm bin)/protractor conf.js --specs sbisec.js",
+    "scraping-tokyu": "$(npm bin)/protractor conf.js --specs tokyu.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/chroju/selenium_scraping_banks#readme",
   "dependencies": {
+    "nightmare": "^2.4.1",
     "protractor": "^3.3.0"
   }
 }

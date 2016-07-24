@@ -35,16 +35,18 @@ describe('jpbank', function() {
     element(by.xpath('//input[@name="loginPassword"]')).sendKeys(browser.params.jpbank.pass);
     element(by.xpath('//input[@name="U010302"]')).click();
 
-    element(by.tagName('title')).getText().then(function (title) {
-      console.log("title");
+  });
+
+  it('notice', function() {
+    browser.getTitle().then(function (title) {
       if(title.match(/お知らせ/)) {
         element(by.xpath('//*[@id="strMain"]/p[3]/a')).click();
       }
     });
-    browser.getCurrentUrl().then(function (url) {
-      console.log(url);
-    });
+  });
 
+  it('value', function() {
+    browser.sleep(5000);
     element(by.xpath('//*[@id="strMain"]/div[3]/div/div[2]/p/span')).getText().then(function (value) {
       console.log(value);
     });
